@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-    <link rel="icon" type="image/png" href="saeweb-32x32.png">
+    <!-- mot de passe always data : naErzTuy09-->
+    <link rel="icon" type="image/webp" href="logo_monpaf.webp">
     <meta charset="UTF-8">
-    <meta name="description" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Bienvenue sur notre site, il répertorie les offres et 
+    une petite partie de notre histoire">
     <title>MONPAF</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_tablette.css">
+    <link rel="stylesheet" href="style/style_tel.css">
+    
 </head>
 <body>
     <header>
         <h1 class="h1tete">MONPAF</h1>
-        <h3>Contact</h3>
-        <h3>Boutique</h3>
+        <h3 class="bouton-top" onclick="location.href='boutique.html'">Boutique</h3>
+        <button id="styleBtn"> Changer le style</button>
+
+        <script>
+          const btn = document.getElementById("styleBtn");
+
+          //on attend l'évènement sur le bouton (donc là le click) puis en gros on applique la classe clair au body
+          btn.addEventListener("click", () => {
+          document.body.classList.toggle("clair");
+          });
+        </script>
     </header>
+
+
     <div class="debut">
         <h2 class="h2debut">Qui sommes nous ?</h2>
         <h5 class="textedebut">Nous sommes une entreprise mélant savoir-faire traditionnel 
             et nouvelles technologies 
             dans le domaine de l’horlogerie afin d’offrir une qualité supérieure ainsi 
-            qu’une esthétique simple en apparence mais innovante dans les finitions</h5>
+            qu’une esthétique simple en apparence mais innovante dans les finitions
+        </h5>
     </div>
-    
-    <section class="PartieSkyDiver">
-    <div class="image-SkyDiver">
-        <img src="images/skydiver.png" alt="image-SkyDiver"> 
-    </div>
+
+
+<section class="design">
+  <div class="h2design">
+    <h2><strong>UN DESIGN AU SERVICE DE L’ESTHETIQUE</strong></h2>
+    <p class="description-design">
+      Imaginée pour ceux qui ont toujours rêvé de
+      voyager au-delà des nuages, la Nebula est née de la fusion entre l’esprit d’exploration 
+      et l’artisanat horloger. Son créateur voulait offrir à chaque aventurier urbain 
+      une montre qui évoque la contemplation des étoiles, 
+      l’immensité du ciel, et le goût de l’inconnu qui habite chaque explorateur de la nuit.
+    </p>
+    <button class="bouton-boutique" onclick="location.href='boutique.html'">Boutique</button>
+  </div>
+    <img src="images/montresansnom.webp" alt="montressnom" class="image-design" >
+</section>
+
+
+<section class="PartieSkyDiver">
   <div class="texteSkyDiver">
     <h2><strong>Sky Diver</strong></h2>
     <p class="price">10 000€</p>
@@ -34,11 +64,15 @@
     là où chaque seconde pèse plus lourd que la gravité. Pensée d’abord comme un exercice de style, elle est vite devenue une quête : 
       faire dialoguer la précision d’un instrument aéronautique et l’âme d’un mouvement mécanique apparent.
     </p>
-    <button class="boutton-boutique">Boutique</button>
+    <button class="bouton-boutique" onclick="location.href='boutique.html'">Boutique</button>
+  </div>
+  <div class="image-SkyDiver">
+        <img src="images/skydiver.png" alt="image-SkyDiver"> 
   </div>
 </section>
 
-    <section class="PartieNebula">
+
+<section class="PartieNebula">
   <div class="texteNebula">
     <h2><strong>Nebula</strong></h2>
     <p class="price">6500€</p>
@@ -49,7 +83,7 @@
       une montre qui évoque la contemplation des étoiles, 
       l’immensité du ciel, et le goût de l’inconnu qui habite chaque explorateur de la nuit.
     </p>
-    <button class="boutton-boutique">Boutique</button>
+    <button class="bouton-boutique" onclick="location.href='boutique.html'">Boutique</button>
   </div>
   <div class="image-Nebula">
     <img src="images/nebula.jpg" alt="image-Nebula">
@@ -57,18 +91,24 @@
 </section>
 
 
+<form class="formulaire-container" id="formulaire">
+  <h2>Envoyez nous un retour : </h2>
+  <input type="text" class="form-nom" placeholder="Nom" name="nom">
+  <input type="text" class="form-prénom" placeholder="Prénom" name="prénom">
+  <textarea name="message" class="message-area" 
+  placeholder="Entrez votre message ici : " name="message">
+  </textarea>
+  <input type="submit" class="valid" value="Envoyer">
+</form>
 
-    
-
-
-<footer class="footer">
+<footer>
     <div class="footer-container">
 
         <div class="footer-left">
             <h3>MONPAF</h3>
-            <p>MONPAF est une compagnie de montres tres reconnue 
-                dans le monde pour ces belles creations et modeles
-                tres atypique et luxueux
+            <p class="desc-footer">MONPAF est une compagnie de montres reconnues 
+                dans le monde pour ses belles créations et modèles
+                très atypiques et luxueux
             </p>
             <div class="social-icons">
                 <a href="https://www.instagram.com/monpaf_/" target="_blank"><img src="images/insta.jpg" alt="Instagram"></a>
@@ -78,28 +118,14 @@
         </div>
 
         <div class="footer-column">
-            <h4>Features</h4>
-            <a href="#">Core features</a>
-            <a href="#">Pro experience</a>
-            <a href="#">Integrations</a>
+            <h4>A propos</h4>
+            <a href="https://www.youtube.com/watch?v=RcAvhgcAFyQ&list=PLYEnloG65vSq8RaF7lIfH5ezrjhzae3uS&index=7">Mentions légales</a>
+            <a href="sources.html">Sources</a>
         </div>
-
-        <div class="footer-column">
-            <h4>Learn more</h4>
-            <a href="#">Blog</a>
-            <a href="#">Case studies</a>
-            <a href="#">Customer stories</a>
-            <a href="#">Best practices</a>
+        <div class="flèche-haut">
+          <a href="#"><img src="images/flèche_haut.png" alt="flèche" class="flèche"></a>
         </div>
-
-        <div class="footer-column">
-            <h4>Support</h4>
-            <a href="#">Contact</a>
-            <a href="#">Support</a>
-            <a href="#">Legal</a>
-        </div>
-
     </div>
 </footer>
-
-
+</body>
+</html>

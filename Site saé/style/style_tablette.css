@@ -1,0 +1,89 @@
+@media screen and (max-width : 768px) {
+    @media screen and (min-width : 700px) {
+        /* modifications sur skydiver */
+        .PartieSkyDiver {
+            margin-top: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .textSkyDiver {
+            order: 1;
+        }
+        
+        .texteSkyDiver h2 {
+            font-size: 3rem;
+        }
+
+        .texteSkyDiver .description {
+            font-size: 1.6rem;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 1.2;
+        }
+
+        .bouton-boutique {
+            order: 2;
+        }
+
+        .image-SkyDiver {
+            order: 3;
+        }
+
+        .image-SkyDiver img {
+            margin-top: 10px;
+            max-width: 600px;
+        }
+
+        .description {
+            font-size: 3rem;
+        }
+
+        /* Modifications sur design */
+        .design {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 170px;
+            background: none;
+        }
+
+        .image-design {
+            margin-top: 20px;
+        }
+        
+        /* Modification sur nebula */
+
+        .PartieNebula {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .texteNebula h2 {
+            margin-left: 20px;
+            font-size: 4rem;
+        }
+
+        .texteNebula .description{
+            margin-left: 20px;
+            font-size: 1.5rem;
+            max-width: 100%;
+        }
+
+        .image-Nebula img {
+            margin-top: 40px;
+            height: auto;
+            width: 600px;
+            margin-left: 1px;
+        }
+
+        .footer {
+            margin-top: 30px;
+        }
+    }
+}

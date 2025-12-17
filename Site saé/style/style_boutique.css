@@ -1,0 +1,47 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.divVidéocontainer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Vidéo {
+    height: 500px;
+    width: 1000px;
+    border-radius: 5%;
+    margin-top: 100px;
+}
+
+.offres {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.montreboutique {
+    width: auto;
+    height: 250px;
+    border-radius: 5%;
+}
+
+.imageMontresBoutique {
+    border-radius: 3%;
+    height: auto;
+    width: 70%;
+    margin-top: 100px;
+}
+
+.images-prés {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.images-prés :hover {
+    opacity: 60%;
+    transition: 0.5s;
+}
